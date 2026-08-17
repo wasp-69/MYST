@@ -1,13 +1,10 @@
 import customtkinter as ctk
 import threading
 from google import genai
-import os
-from dotenv import load_dotenv
 from random import randint
 from datetime import datetime
 
-load_dotenv()
-API_KEY = os.environ.get("GEMINI_API_KEY") # get the API key from the .env file
+API_KEY = "AQ.Ab8RN6LVSYjMzNSC3YCnVoGKaqLnbqxAjO648hGbXEvlyDX9bA" # get the API key from the .env file
 client = genai.Client(api_key=API_KEY)
 interactionID = None
 
